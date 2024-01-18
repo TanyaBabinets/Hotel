@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Rubik+Bubbles&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Fredoka:wght@400;500;600&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+body {
+    background-color: beige;
+    font-family: 'Archivo Narrow', sans-serif;
+
+}
+
+
+.image-section {
+    flex: 2;
+    margin: 20px;
+    width: 700px;
+    height: 350px;
+ 
+}
+.image-section1 {
+    flex: 1;
+    margin-top: 70px;
+    width: 400px;
+    height: 150px;
+   
+}
+.text-section {
+    width: 400px;
+    flex: 1;
+  
+    margin-left: 730px;
+    margin-top: -360px;
+    text-align:center;
+    
+}
+a {
+    color: brown; 
+    font-size: 26px;
+    margin: 10px;
+    
+}
+#label {
+font-size:24px;
+margin-right:10px;
+}
+#buttons {
+    margin-top: 30px;
+    margin-left: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    color: white;
+    background-color: sandybrown;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 10px 10px 10px brown;
+    
+    
+}
+   
+    a:hover {
+        text-decoration: underline; 
+    }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+h1 {
+    width: auto;
+    height: auto;
+    text-align: center;
+    color: rosybrown;
+    font-family: 'Kaushan Script', cursive;
+    font-size:42px;
+}
+p {
+font-size:22px;
+}
+h3 {
+    color: rosybrown;
+}
+#main {
+    border: 2px solid black;
+    width: 640px;
+    height: 700px;
+    display: flex;
+  
+}
+.start {
+    display: flex;
+    
+    flex-direction: column; 
+}
+#main img {
+    margin:5px;
+    width:620px;
+height:330px;
+}
+.text-block {
+    margin-bottom: 30px; 
+}

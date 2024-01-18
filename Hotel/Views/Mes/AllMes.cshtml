@@ -1,0 +1,29 @@
+﻿@model IEnumerable<Hotel.Models.Messages>
+
+@{
+    ViewBag.Title = "AllMes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (Model != null)
+{
+    <h1>Отзывы</h1>
+
+    @foreach (var mes in Model)
+    {
+
+      
+
+        <div>
+            <p><strong>@mes.user.Login</strong>(@(mes.Datetime != null ? mes.Datetime.Value.ToString("dd.MM.yyyy HH:mm") : "Нет данных")):</p>
+            <p>@mes.Message</p>
+        </div>
+        <hr />
+    }
+}
+else
+{
+    <p>Нет отзывов.</p>
+}
+
+

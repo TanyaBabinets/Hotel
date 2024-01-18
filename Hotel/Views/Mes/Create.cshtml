@@ -1,0 +1,19 @@
+﻿@model Hotel.Models.Messages
+
+<h1>Добавить отзыв</h1>
+
+<form asp-action="Create" method="post">
+    <div id="label">
+        <label for="user">Логин:</label>
+        <input type="text" id="UserName" style="width=300px; height=100px;" name="UserName" required />
+    </div>
+    <div id="label">
+        <label for="Message">Отзыв:</label>
+        <textarea id="Ovziv" style="width:600px; height:200px; margin-top:10px;" asp-for="Message" required></textarea>
+    </div>
+    <div class="buttons">
+        <button type="submit" id="buttons">Отправить</button>              
+    </div>
+</form>
+
+

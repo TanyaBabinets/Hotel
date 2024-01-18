@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="image-section">
+    <img src="~/img/main.jpg" alt="main">
+    <img src="~/img/rest.jpg" alt="rest">
+</div>
+
+<div class="text-section">
+    <div class="text-block">
+        <h1>Emily Resort</h1>
+    </div>
+   
+  @*   <div>
+        <a asp-controller="Mes" asp-action="AllMes">Посмотреть отзывы</a>
+    </div> *@
+
+    <div class="text-block" style="font-size:18px">Расположенный всего лишь в 4 километрах от центра Львова, Emily Hotel является настоящей жемчужиной комплекса отдыха Emily Resort! </div>
+
+    <div class="text-block">
+        <h1>Гостевая книга</h1>
+    </div>
+    <div>
+        <a asp-controller="Mes" asp-action="AllMes" style="font-size:26px">Посмотреть отзывы</a>
+    </div>
+
+    <div>
+        @if (User.Identity.IsAuthenticated)
+        {
+            <div>
+                <a asp-controller="Mes" asp-action="AddMessage" color="brown"  style="font-size:26px">Добавить отзыв</a>
+            </div>
+        } 
+        
+        <p>Чтобы добавить отзыв, пожалуйста, <a asp-controller="Account" color="brown" style="font-size:26px" margin="10px" asp-action="Login">войдите</a> или <a asp-controller="Account" color="brown" style="font-size:26px" asp-action=" Register">зарегистрируйтесь</a></p>
+        
+    </div>
+
+    <div class="contact">
+        <h2>Наши контакты:</h2>
+        <h4>тел. 0322 422 221</h4>
+        <h4>ул. Хмельницкого, 9Б, Винники, Львовськая область, 79495</h4>
+    </div>
+    <div class="image-section1">
+        <img src="~/img/rest1.jpg" alt="main">
+        <p>Мы вас ждем!</p>
+    </div>
+   
+</div>
+      
